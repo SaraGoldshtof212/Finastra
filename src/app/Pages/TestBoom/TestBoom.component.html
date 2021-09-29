@@ -1,0 +1,10 @@
+<form class="border col-md-8 m-auto">
+    <div class="form-group">
+        <label>Search</label>
+        <input type="number" class="form-control col-md-4" [(ngModel)]="searchNum" name="parameter" (input)="onSearch()">  
+        <label>Enter a number</label>
+        <input type="number" class="form-control col-md-4" [(ngModel)]="inputNum" name="parameter1">
+        <button class="button primary col-md-2" (click)="onGo()">GO</button>
+        <app-Scroll-Num [numList]="listToDisplay"></app-Scroll-Num>
+    </div>
+</form>
